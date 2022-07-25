@@ -1,11 +1,12 @@
 {
   "projectId": "0255d681-a82b-4a65-8ccd-1a5170166a7c",
   "rdbmsId": "5be759f0-4982-40bf-bc35-2d95a3ca3c87",
-  "insightName": "test save 1",
+  "insightName": "test save 2",
   "layout": "",
   "global": true,
   "cacheable": true,
   "cacheMinutes": -1,
+  "cacheCron": "",
   "cacheEncrypt": false,
   "recipe": [
     "AddSheet(\"0\");",
@@ -15,7 +16,7 @@
     "Database ( database \u003d [ \"995cf169-6b44-4a42-b75c-af12f9f45c36\" ] ) | Select ( DIABETES__CHOL , DIABETES__DIABETES_UNIQUE_ROW_ID , DIABETES__DRUG , DIABETES__END_DATE , DIABETES__FRAME , DIABETES__GENDER , DIABETES__GLYHB , DIABETES__HDL , DIABETES__HEIGHT , DIABETES__HIP , DIABETES__LOCATION , DIABETES__PATIENT , DIABETES__RATIO , DIABETES__STAB_GLU , DIABETES__START_DATE , DIABETES__TIME_PPN , DIABETES__WAIST , DIABETES__WEIGHT ) .as ( [ CHOL , DIABETES_UNIQUE_ROW_ID , DRUG , END_DATE , FRAME , GENDER , GLYHB , HDL , HEIGHT , HIP , LOCATION , PATIENT , RATIO , STAB_GLU , START_DATE , TIME_PPN , WAIST , WEIGHT ] ) | Distinct ( false ) | Import ( frame \u003d [ CreateFrame ( frameType \u003d [ NATIVE ] , override \u003d [ true ] ) .as ( [ \"Diabetes_FRAME804238\" ] ) ] ) ;",
     "Frame ( frame \u003d [ Diabetes_FRAME804238 ] ) | QueryAll ( ) | AutoTaskOptions ( panel \u003d [ \"0\" ] , layout \u003d [ \"Grid\" ] ) | Collect ( 2000 ) ;",
     "META | PositionInsightRecipe({} , {} , {} , {} , {\"auto\":false,\"top\":24.0,\"left\":24.0} , {});",
-    "META | SetInsightConfig({\"presentation\":true,\"sheets\":{\"0\":{\"backgroundColor\":\"#FFFFFF\",\"golden\":{\"content\":[{\"type\":\"row\",\"content\":[{\"activeItemIndex\":0,\"width\":100,\"type\":\"stack\",\"content\":[{\"componentState\":{\"panelId\":\"0\"},\"componentName\":\"panel\",\"type\":\"component\"}]}]}]}}},\"panels\":{\"0\":{\"config\":{\"backgroundColor\":\"#FFFFFF\",\"type\":\"golden\",\"opacity\":100}}},\"sheet\":\"0\"});",
+    "META | SetInsightConfig({\"sheets\":{\"0\":{\"backgroundColor\":\"#FFFFFF\",\"golden\":{\"content\":[{\"type\":\"row\",\"content\":[{\"activeItemIndex\":0,\"width\":100,\"type\":\"stack\",\"content\":[{\"componentState\":{\"panelId\":\"0\"},\"componentName\":\"panel\",\"type\":\"component\"}]}]}]},\"order\":0}},\"panels\":{\"0\":{\"config\":{\"backgroundColor\":\"#FFFFFF\",\"type\":\"golden\",\"opacity\":100}}},\"sheet\":\"0\"});",
     "ReadInsightTheme();"
   ]
 }
