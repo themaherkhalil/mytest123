@@ -1,11 +1,12 @@
 {
   "projectId": "0255d681-a82b-4a65-8ccd-1a5170166a7c",
   "rdbmsId": "adaa1a31-ec1f-4d3b-9024-9cc2a9d7d239",
-  "insightName": "dddd",
+  "insightName": "dddd3",
   "layout": "",
   "global": true,
   "cacheable": true,
   "cacheMinutes": -1,
+  "cacheCron": "",
   "cacheEncrypt": false,
   "recipe": [
     "AddSheet(\"0\");",
