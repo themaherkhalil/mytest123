@@ -1,0 +1,19 @@
+{
+  "projectId": "0255d681-a82b-4a65-8ccd-1a5170166a7c",
+  "rdbmsId": "ee557cc0-1cd8-4201-a721-578f73b34160",
+  "insightName": "test1234567",
+  "layout": "",
+  "global": true,
+  "cacheable": true,
+  "cacheMinutes": -1,
+  "cacheEncrypt": false,
+  "recipe": [
+    "AddSheet(\"0\");",
+    "SetSheetState({\"sheetId\":\"0\",\"sheetLabel\":\"Sheet1\",\"backgroundColor\":null,\"hideHeaders\":null,\"hideBorders\":null,\"height\":null,\"width\":null,\"borderSize\":2,\"gutterSize\":2});",
+    "AddPanel(panel\u003d[\"0\"], sheet\u003d[\"0\"]);",
+    "SetPanelState(\"\u003cencode\u003e{\"panelId\":\"0\",\"panelLabel\":null,\"sheetId\":\"0\",\"view\":\"pipeline\",\"viewOptions\":null,\"renderedViewOptions\":null,\"numCollect\":2000,\"dynamicVars\":[],\"viewOptionsMap\":{\"visualization\":{\"type\":\"echarts\"}},\"config\":{\"type\":\"golden\"},\"ornaments\":{},\"events\":{\"onSingleClick\":{\"Unfilter\":[{\"disabledVisuals\":[\"Grid\",\"Sunburst\"],\"default\":true,\"query\":\"(\u003cFrame\u003e | UnfilterFrame(\u003cSelectedColumn\u003e));\",\"options\":{},\"refresh\":false,\"disabled\":false,\"panel\":\"\"}]},\"onBrush\":{\"Filter\":[{\"default\":true,\"query\":\"if((IsEmpty(\u003cSelectedValues\u003e)),(\u003cFrame\u003e | UnfilterFrame(\u003cSelectedColumn\u003e)), (\u003cFrame\u003e | SetFrameFilter(\u003cSelectedColumn\u003e\u003d\u003d\u003cSelectedValues\u003e)));\",\"options\":{},\"refresh\":false,\"disabled\":false,\"panel\":\"\"}]}},\"comments\":{},\"filters\":[],\"order\":[],\"cbv\":[]}\u003c/encode\u003e\");",
+    "META | PositionInsightRecipe({} , {} , {} , {});",
+    "META | SetInsightConfig({\"presentation\":true,\"sheets\":{\"0\":{\"backgroundColor\":\"#FFFFFF\",\"golden\":{\"content\":[{\"type\":\"row\",\"content\":[{\"activeItemIndex\":0,\"width\":100,\"type\":\"stack\",\"content\":[{\"componentState\":{\"panelId\":\"0\"},\"componentName\":\"panel\",\"type\":\"component\"}]}]}]}}},\"panels\":{\"0\":{\"config\":{\"backgroundColor\":\"#FFFFFF\",\"type\":\"golden\",\"opacity\":100}}},\"sheet\":\"0\"});",
+    "ReadInsightTheme();"
+  ]
+}
